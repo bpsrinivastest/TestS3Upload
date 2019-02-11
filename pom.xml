@@ -3,10 +3,12 @@
   <groupId>TestS3Upload</groupId>
   <artifactId>TestS3Upload</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- 
 	<packaging>war</packaging>
 	<name>heroku.services</name>
 	<description>Demo project for Spring Boot</description>
-
+ -->
 
 
 	<parent>
