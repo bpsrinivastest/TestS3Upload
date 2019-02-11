@@ -946,3 +946,799 @@ b4b8443784a1cd3e013fecb6689ea514c5d8db431bf724863eb8ca24515143a9"
 			--- [           main] c.a.requestId                            : x-amzn-RequestId: not available
 2019-02-10 15:25:45.687 DEBUG FTL1860244C7E5E
 			--- [           main] c.a.requestId                            : AWS Request ID: 60542776E92B5805
+2019-02-10 16:55:37.767 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.AmazonWebServiceClient               : Internal logging successfully configured to commons logger: true
+2019-02-10 16:55:37.779 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.AwsSdkMetrics                      : Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-02-10 16:55:39.314 DEBUG FTL1860244C7E5E
+			--- [nnection-reaper] h.i.c.PoolingHttpClientConnectionManager : Closing connections idle longer than 60000 MILLISECONDS
+2019-02-10 16:55:39.314 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@4241e0f4: Unable to load Client Side Monitoring configurations from environment variables!
+2019-02-10 16:55:39.314 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@4ebff610: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-02-10 16:55:39.316 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@babafc2: Unable to load config file
+2019-02-10 16:55:39.429 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Sending Request: POST https://mytestjavabucket.s3.us-west-2.amazonaws.com /MyStudentData1.txt Parameters: ({"uploads":[null]}Headers: (User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151, amz-sdk-invocation-id: 267eaa15-c365-0d32-3fda-d915c8265398, Content-Length: 0, Content-Type: application/octet-stream, ) 
+2019-02-10 16:55:39.533 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 Canonical Request: '"POST
+/MyStudentData1.txt
+uploads=
+amz-sdk-invocation-id:267eaa15-c365-0d32-3fda-d915c8265398
+amz-sdk-retry:0/0/500
+content-length:0
+content-type:application/octet-stream
+host:mytestjavabucket.s3.us-west-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190210T235539Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-02-10 16:55:39.533 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190210T235539Z
+20190210/us-west-2/s3/aws4_request
+c397de8258ce9377fcfa63b85bf3bc74cbada12943540de921a3e7088bef61f2"
+2019-02-10 16:55:39.534 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : Generating a new signing key as the signing key not available in the cache for the date 1549756800000
+2019-02-10 16:55:39.602 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAddCookies              : CookieSpec selected: default
+2019-02-10 16:55:39.612 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAuthCache               : Auth cache not set in the context
+2019-02-10 16:55:39.613 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-02-10 16:55:39.631 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:55:39.633 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Opening connection {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443
+2019-02-10 16:55:39.683 DEBUG FTL1860244C7E5E
+			--- [           main] .i.c.DefaultHttpClientConnectionOperator : Connecting to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443
+2019-02-10 16:55:39.684 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : connecting to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443
+2019-02-10 16:55:39.685 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Connecting socket to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443 with timeout 10000
+2019-02-10 16:55:39.794 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-02-10 16:55:39.794 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-02-10 16:55:39.794 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-02-10 16:55:39.795 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-02-10 16:55:39.795 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Starting handshake
+2019-02-10 16:55:39.999 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Secure session established
+2019-02-10 16:55:40.000 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  negotiated protocol: TLSv1.2
+2019-02-10 16:55:40.000 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-02-10 16:55:40.001 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  peer principal: CN=*.s3-us-west-2.amazonaws.com, O=Amazon.com Inc., L=Seattle, ST=Washington, C=US
+2019-02-10 16:55:40.001 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  peer alternative names: [s3-us-west-2.amazonaws.com, *.s3-us-west-2.amazonaws.com, s3.us-west-2.amazonaws.com, *.s3.us-west-2.amazonaws.com, s3.dualstack.us-west-2.amazonaws.com, *.s3.dualstack.us-west-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-west-2.amazonaws.com, s3-control.us-west-2.amazonaws.com, *.s3-control.dualstack.us-west-2.amazonaws.com, s3-control.dualstack.us-west-2.amazonaws.com]
+2019-02-10 16:55:40.002 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-02-10 16:55:40.019 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.i.SdkSSLSocket                       : created: mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443
+2019-02-10 16:55:40.020 DEBUG FTL1860244C7E5E
+			--- [           main] .i.c.DefaultHttpClientConnectionOperator : Connection established 192.168.0.15:55492<->52.218.212.184:443
+2019-02-10 16:55:40.020 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:55:40.021 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Executing request POST /MyStudentData1.txt?uploads HTTP/1.1
+2019-02-10 16:55:40.021 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Proxy auth state: UNCHALLENGED
+2019-02-10 16:55:40.024 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> POST /MyStudentData1.txt?uploads HTTP/1.1
+2019-02-10 16:55:40.024 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Host: mytestjavabucket.s3.us-west-2.amazonaws.com
+2019-02-10 16:55:40.024 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-02-10 16:55:40.025 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=4c579164c241ab75d0d1876234648f9cad932163396311b3133209fbcbe3300f
+2019-02-10 16:55:40.025 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> X-Amz-Date: 20190210T235539Z
+2019-02-10 16:55:40.025 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+2019-02-10 16:55:40.025 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-invocation-id: 267eaa15-c365-0d32-3fda-d915c8265398
+2019-02-10 16:55:40.026 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-02-10 16:55:40.026 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Type: application/octet-stream
+2019-02-10 16:55:40.026 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Length: 0
+2019-02-10 16:55:40.026 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Connection: Keep-Alive
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "POST /MyStudentData1.txt?uploads HTTP/1.1[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Host: mytestjavabucket.s3.us-west-2.amazonaws.com[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=4c579164c241ab75d0d1876234648f9cad932163396311b3133209fbcbe3300f[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "X-Amz-Date: 20190210T235539Z[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151[\r][\n]"
+2019-02-10 16:55:40.027 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-invocation-id: 267eaa15-c365-0d32-3fda-d915c8265398[\r][\n]"
+2019-02-10 16:55:40.028 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-02-10 16:55:40.028 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+2019-02-10 16:55:40.028 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+2019-02-10 16:55:40.028 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-02-10 16:55:40.028 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:55:40.113 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-02-10 16:55:40.114 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-id-2: 5NculSyPulWZ+4WNBD0Yow7/S5EZM9nVV+VA4R09cfvyo89VUzNl/DnA4oaK4bZe5pCUdNJQ9nQ=[\r][\n]"
+2019-02-10 16:55:40.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-request-id: 4323EC50AB8DD23D[\r][\n]"
+2019-02-10 16:55:40.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Date: Sun, 10 Feb 2019 23:56:32 GMT[\r][\n]"
+2019-02-10 16:55:40.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-02-10 16:55:40.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-02-10 16:55:40.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 200 OK
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-id-2: 5NculSyPulWZ+4WNBD0Yow7/S5EZM9nVV+VA4R09cfvyo89VUzNl/DnA4oaK4bZe5pCUdNJQ9nQ=
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-request-id: 4323EC50AB8DD23D
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Date: Sun, 10 Feb 2019 23:56:32 GMT
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Transfer-Encoding: chunked
+2019-02-10 16:55:40.127 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Server: AmazonS3
+2019-02-10 16:55:40.134 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Connection can be kept alive for 60000 MILLISECONDS
+2019-02-10 16:55:40.178 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.s.s.m.t.XmlResponsesSaxParser        : Parsing XML response document with handler: class com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$InitiateMultipartUploadHandler
+2019-02-10 16:55:40.179 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "169[\r][\n]"
+2019-02-10 16:55:40.179 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-02-10 16:55:40.180 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>mytestjavabucket</Bucket><Key>MyStudentData1.txt</Key><UploadId>K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb</UploadId></InitiateMultipartUploadResult>[\r][\n]"
+2019-02-10 16:55:40.182 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "0[\r][\n]"
+2019-02-10 16:55:40.182 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:55:40.182 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-02-10 16:55:40.182 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 0
+2019-02-10 16:55:40.182 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:55:40.183 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Received successful response: 200, AWS Request ID: 4323EC50AB8DD23D
+2019-02-10 16:55:40.183 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : x-amzn-RequestId: not available
+2019-02-10 16:55:40.183 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : AWS Request ID: 4323EC50AB8DD23D
+2019-02-10 16:55:40.190 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Sending Request: POST https://mytestjavabucket.s3.us-west-2.amazonaws.com /MyStudentData1.txt Parameters: ({"uploadId":["K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb"]}Headers: (User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151, amz-sdk-invocation-id: aa38572f-9f98-d48f-c844-df7f38cc7e99, Content-Length: 51, Content-Type: application/xml, ) 
+2019-02-10 16:55:40.191 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 Canonical Request: '"POST
+/MyStudentData1.txt
+uploadId=K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb
+amz-sdk-invocation-id:aa38572f-9f98-d48f-c844-df7f38cc7e99
+amz-sdk-retry:0/0/500
+content-length:51
+content-type:application/xml
+host:mytestjavabucket.s3.us-west-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190210T235540Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-02-10 16:55:40.191 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190210T235540Z
+20190210/us-west-2/s3/aws4_request
+883d5926d662d1470a127ef673e6e653a8ebf739bd83e2cf5608098b2a76574b"
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAddCookies              : CookieSpec selected: default
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAuthCache               : Auth cache not set in the context
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Executing request POST /MyStudentData1.txt?uploadId=K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb HTTP/1.1
+2019-02-10 16:55:40.193 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Proxy auth state: UNCHALLENGED
+2019-02-10 16:55:40.194 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> POST /MyStudentData1.txt?uploadId=K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb HTTP/1.1
+2019-02-10 16:55:40.194 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Host: mytestjavabucket.s3.us-west-2.amazonaws.com
+2019-02-10 16:55:40.194 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-02-10 16:55:40.194 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=440dd47a7ad0e42d84610580017f1a9a88166966d9d812f8ca8b69a58e0013cd
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> X-Amz-Date: 20190210T235540Z
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-invocation-id: aa38572f-9f98-d48f-c844-df7f38cc7e99
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Type: application/xml
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Length: 51
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Connection: Keep-Alive
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "POST /MyStudentData1.txt?uploadId=K2pG61iGp9u9YbfeTjSEFCaEan75PZkp.Gw8FDohHrKq7di.73oXwJWObGe4fbgPOMEg41El0EQhEqiwT1I3LazSZNoxbL35qS1wd2ZdT4jZgU0Am4LT0lyYaVMyf8mb HTTP/1.1[\r][\n]"
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Host: mytestjavabucket.s3.us-west-2.amazonaws.com[\r][\n]"
+2019-02-10 16:55:40.195 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-02-10 16:55:40.196 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=440dd47a7ad0e42d84610580017f1a9a88166966d9d812f8ca8b69a58e0013cd[\r][\n]"
+2019-02-10 16:55:40.196 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "X-Amz-Date: 20190210T235540Z[\r][\n]"
+2019-02-10 16:55:40.196 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151[\r][\n]"
+2019-02-10 16:55:40.197 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-invocation-id: aa38572f-9f98-d48f-c844-df7f38cc7e99[\r][\n]"
+2019-02-10 16:55:40.197 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-02-10 16:55:40.199 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Type: application/xml[\r][\n]"
+2019-02-10 16:55:40.199 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Length: 51[\r][\n]"
+2019-02-10 16:55:40.199 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-02-10 16:55:40.199 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:55:40.199 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "<CompleteMultipartUpload></CompleteMultipartUpload>"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-request-id: DBD98F4D4F7B10A9[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-id-2: mThAFHrMWilgupQhQIqCrGqem1fcSnZ7tMZDMLhuLRsgPU0s3Fqb9Tr37el9fRPYS6Gj5Ea2iG0=[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Date: Sun, 10 Feb 2019 23:56:31 GMT[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Connection: close[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-02-10 16:55:40.254 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 400 Bad Request
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-request-id: DBD98F4D4F7B10A9
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-id-2: mThAFHrMWilgupQhQIqCrGqem1fcSnZ7tMZDMLhuLRsgPU0s3Fqb9Tr37el9fRPYS6Gj5Ea2iG0=
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Content-Type: application/xml
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Transfer-Encoding: chunked
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Date: Sun, 10 Feb 2019 23:56:31 GMT
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Connection: close
+2019-02-10 16:55:40.255 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Server: AmazonS3
+2019-02-10 16:55:40.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "118[\r][\n]"
+2019-02-10 16:55:40.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<Error><Code>MalformedXML</Code><Message>The XML you provided was not well-formed or did not validate against our published schema</Message><RequestId>DBD98F4D4F7B10A9</RequestId><HostId>mThAFHrMWilgupQhQIqCrGqem1fcSnZ7tMZDMLhuLRsgPU0s3Fqb9Tr37el9fRPYS6Gj5Ea2iG0=</HostId></Error>[\r][\n]"
+2019-02-10 16:55:40.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "0[\r][\n]"
+2019-02-10 16:55:40.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:55:40.257 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: Close connection
+2019-02-10 16:55:40.257 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.i.SdkSSLSocket                       : shutting down output of mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443
+2019-02-10 16:55:40.257 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.i.SdkSSLSocket                       : closing mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.212.184:443
+2019-02-10 16:55:40.258 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Connection discarded
+2019-02-10 16:55:40.258 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-02-10 16:55:40.276 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: DBD98F4D4F7B10A9; S3 Extended Request ID: mThAFHrMWilgupQhQIqCrGqem1fcSnZ7tMZDMLhuLRsgPU0s3Fqb9Tr37el9fRPYS6Gj5Ea2iG0=), S3 Extended Request ID: mThAFHrMWilgupQhQIqCrGqem1fcSnZ7tMZDMLhuLRsgPU0s3Fqb9Tr37el9fRPYS6Gj5Ea2iG0=
+2019-02-10 16:56:41.996 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.AmazonWebServiceClient               : Internal logging successfully configured to commons logger: true
+2019-02-10 16:56:42.005 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.AwsSdkMetrics                      : Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-02-10 16:56:43.412 DEBUG FTL1860244C7E5E
+			--- [nnection-reaper] h.i.c.PoolingHttpClientConnectionManager : Closing connections idle longer than 60000 MILLISECONDS
+2019-02-10 16:56:43.412 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@4241e0f4: Unable to load Client Side Monitoring configurations from environment variables!
+2019-02-10 16:56:43.413 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@4ebff610: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-02-10 16:56:43.415 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@babafc2: Unable to load config file
+2019-02-10 16:56:43.491 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Sending Request: POST https://mytestjavabucket.s3.us-west-2.amazonaws.com /MyStudentData1.txt Parameters: ({"uploads":[null]}Headers: (User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151, amz-sdk-invocation-id: 98b7f6dd-3dd3-7b13-04f0-63b555a8a356, Content-Length: 0, Content-Type: application/octet-stream, ) 
+2019-02-10 16:56:43.582 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 Canonical Request: '"POST
+/MyStudentData1.txt
+uploads=
+amz-sdk-invocation-id:98b7f6dd-3dd3-7b13-04f0-63b555a8a356
+amz-sdk-retry:0/0/500
+content-length:0
+content-type:application/octet-stream
+host:mytestjavabucket.s3.us-west-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190210T235643Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-02-10 16:56:43.583 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190210T235643Z
+20190210/us-west-2/s3/aws4_request
+cc260a24cf8cc43fe459097d475c68ac7e41bb27a1c56d0035844be7e5552904"
+2019-02-10 16:56:43.583 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : Generating a new signing key as the signing key not available in the cache for the date 1549756800000
+2019-02-10 16:56:43.662 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAddCookies              : CookieSpec selected: default
+2019-02-10 16:56:43.674 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAuthCache               : Auth cache not set in the context
+2019-02-10 16:56:43.676 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-02-10 16:56:43.693 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:43.695 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Opening connection {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443
+2019-02-10 16:56:43.756 DEBUG FTL1860244C7E5E
+			--- [           main] .i.c.DefaultHttpClientConnectionOperator : Connecting to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.248.104:443
+2019-02-10 16:56:43.756 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : connecting to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.248.104:443
+2019-02-10 16:56:43.756 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Connecting socket to mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.248.104:443 with timeout 10000
+2019-02-10 16:56:43.834 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-02-10 16:56:43.834 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-02-10 16:56:43.835 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-02-10 16:56:43.835 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-02-10 16:56:43.835 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Starting handshake
+2019-02-10 16:56:43.989 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            : Secure session established
+2019-02-10 16:56:43.989 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  negotiated protocol: TLSv1.2
+2019-02-10 16:56:43.989 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-02-10 16:56:43.990 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  peer principal: CN=*.s3-us-west-2.amazonaws.com, O=Amazon.com Inc., L=Seattle, ST=Washington, C=US
+2019-02-10 16:56:43.990 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  peer alternative names: [s3-us-west-2.amazonaws.com, *.s3-us-west-2.amazonaws.com, s3.us-west-2.amazonaws.com, *.s3.us-west-2.amazonaws.com, s3.dualstack.us-west-2.amazonaws.com, *.s3.dualstack.us-west-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-west-2.amazonaws.com, s3-control.us-west-2.amazonaws.com, *.s3-control.dualstack.us-west-2.amazonaws.com, s3-control.dualstack.us-west-2.amazonaws.com]
+2019-02-10 16:56:43.990 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.h.c.s.SdkTLSSocketFactory            :  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-02-10 16:56:43.996 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.i.SdkSSLSocket                       : created: mytestjavabucket.s3.us-west-2.amazonaws.com/52.218.248.104:443
+2019-02-10 16:56:43.997 DEBUG FTL1860244C7E5E
+			--- [           main] .i.c.DefaultHttpClientConnectionOperator : Connection established 192.168.0.15:55495<->52.218.248.104:443
+2019-02-10 16:56:43.997 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:56:43.997 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Executing request POST /MyStudentData1.txt?uploads HTTP/1.1
+2019-02-10 16:56:43.997 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Proxy auth state: UNCHALLENGED
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> POST /MyStudentData1.txt?uploads HTTP/1.1
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Host: mytestjavabucket.s3.us-west-2.amazonaws.com
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=02ea6a534534ca27b481b95e2d6896144e236422a3f379e7a373a09f95d033d8
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> X-Amz-Date: 20190210T235643Z
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-invocation-id: 98b7f6dd-3dd3-7b13-04f0-63b555a8a356
+2019-02-10 16:56:43.999 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Type: application/octet-stream
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Length: 0
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Connection: Keep-Alive
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "POST /MyStudentData1.txt?uploads HTTP/1.1[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Host: mytestjavabucket.s3.us-west-2.amazonaws.com[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=02ea6a534534ca27b481b95e2d6896144e236422a3f379e7a373a09f95d033d8[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "X-Amz-Date: 20190210T235643Z[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151[\r][\n]"
+2019-02-10 16:56:44.000 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-invocation-id: 98b7f6dd-3dd3-7b13-04f0-63b555a8a356[\r][\n]"
+2019-02-10 16:56:44.001 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-02-10 16:56:44.001 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+2019-02-10 16:56:44.001 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+2019-02-10 16:56:44.001 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-02-10 16:56:44.001 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:56:44.067 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-id-2: 1Sp49G9pG4r1l/L8fxckb31q3PA1GkBnpLR79uocGkO/I10tdDs6MigPpNNAAysyksrIC6eYVUI=[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-request-id: 7173F2748CA246B6[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Date: Sun, 10 Feb 2019 23:57:36 GMT[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-02-10 16:56:44.068 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.070 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 200 OK
+2019-02-10 16:56:44.070 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-id-2: 1Sp49G9pG4r1l/L8fxckb31q3PA1GkBnpLR79uocGkO/I10tdDs6MigPpNNAAysyksrIC6eYVUI=
+2019-02-10 16:56:44.071 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-request-id: 7173F2748CA246B6
+2019-02-10 16:56:44.071 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Date: Sun, 10 Feb 2019 23:57:36 GMT
+2019-02-10 16:56:44.071 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Transfer-Encoding: chunked
+2019-02-10 16:56:44.071 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Server: AmazonS3
+2019-02-10 16:56:44.075 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Connection can be kept alive for 60000 MILLISECONDS
+2019-02-10 16:56:44.094 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.s.s.m.t.XmlResponsesSaxParser        : Parsing XML response document with handler: class com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$InitiateMultipartUploadHandler
+2019-02-10 16:56:44.095 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "169[\r][\n]"
+2019-02-10 16:56:44.095 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-02-10 16:56:44.095 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>mytestjavabucket</Bucket><Key>MyStudentData1.txt</Key><UploadId>uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0</UploadId></InitiateMultipartUploadResult>[\r][\n]"
+2019-02-10 16:56:44.096 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "0[\r][\n]"
+2019-02-10 16:56:44.096 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 0
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Received successful response: 200, AWS Request ID: 7173F2748CA246B6
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : x-amzn-RequestId: not available
+2019-02-10 16:56:44.097 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : AWS Request ID: 7173F2748CA246B6
+2019-02-10 16:56:44.113 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Sending Request: PUT https://mytestjavabucket.s3.us-west-2.amazonaws.com /MyStudentData1.txt Parameters: ({"uploadId":["uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0"],"partNumber":["1"]}Headers: (User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151, amz-sdk-invocation-id: 0f8ac3c8-13e8-66a3-4e3a-6d6a5c068936, Content-Length: 38, Content-Type: application/octet-stream, ) 
+2019-02-10 16:56:44.113 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 Canonical Request: '"PUT
+/MyStudentData1.txt
+partNumber=1&uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0
+amz-sdk-invocation-id:0f8ac3c8-13e8-66a3-4e3a-6d6a5c068936
+amz-sdk-retry:0/0/500
+content-length:38
+content-type:application/octet-stream
+host:mytestjavabucket.s3.us-west-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190210T235644Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-02-10 16:56:44.113 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190210T235644Z
+20190210/us-west-2/s3/aws4_request
+ccf6562391f1967cb9516bbbc124a56ae332b58d04afd93f111e94afb698c1ac"
+2019-02-10 16:56:44.114 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAddCookies              : CookieSpec selected: default
+2019-02-10 16:56:44.114 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAuthCache               : Auth cache not set in the context
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Executing request PUT /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0&partNumber=1 HTTP/1.1
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Proxy auth state: UNCHALLENGED
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> PUT /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0&partNumber=1 HTTP/1.1
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Host: mytestjavabucket.s3.us-west-2.amazonaws.com
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=b20169cf1e2e8a29df7479c409651268919b06eafd19bcb137970aee2b11bfec
+2019-02-10 16:56:44.115 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> X-Amz-Date: 20190210T235644Z
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-invocation-id: 0f8ac3c8-13e8-66a3-4e3a-6d6a5c068936
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Type: application/octet-stream
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Length: 38
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Connection: Keep-Alive
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Expect: 100-continue
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "PUT /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0&partNumber=1 HTTP/1.1[\r][\n]"
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Host: mytestjavabucket.s3.us-west-2.amazonaws.com[\r][\n]"
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=b20169cf1e2e8a29df7479c409651268919b06eafd19bcb137970aee2b11bfec[\r][\n]"
+2019-02-10 16:56:44.116 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "X-Amz-Date: 20190210T235644Z[\r][\n]"
+2019-02-10 16:56:44.117 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151[\r][\n]"
+2019-02-10 16:56:44.117 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-invocation-id: 0f8ac3c8-13e8-66a3-4e3a-6d6a5c068936[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Length: 38[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-02-10 16:56:44.118 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 100 Continue[\r][\n]"
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 100 Continue
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Test File for S3[\r][\n]"
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Test File for S3[\r][\n]"
+2019-02-10 16:56:44.175 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:56:44.228 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-02-10 16:56:44.228 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-id-2: 4Yp0FQ6ke8iussmt2EULBYdoN5rF6WWh/+/EMz3X26oR0fALJUUlmqU/QJ4d/esHXrB1QwkfAg0=[\r][\n]"
+2019-02-10 16:56:44.228 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-request-id: 328C650BDBDB7151[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Date: Sun, 10 Feb 2019 23:57:36 GMT[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "ETag: "2ab9a36c0cc55a05adb1a72b9543cb80"[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 200 OK
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-id-2: 4Yp0FQ6ke8iussmt2EULBYdoN5rF6WWh/+/EMz3X26oR0fALJUUlmqU/QJ4d/esHXrB1QwkfAg0=
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-request-id: 328C650BDBDB7151
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Date: Sun, 10 Feb 2019 23:57:36 GMT
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << ETag: "2ab9a36c0cc55a05adb1a72b9543cb80"
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Content-Length: 0
+2019-02-10 16:56:44.232 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Server: AmazonS3
+2019-02-10 16:56:44.234 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Connection can be kept alive for 60000 MILLISECONDS
+2019-02-10 16:56:44.234 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-02-10 16:56:44.234 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 0
+2019-02-10 16:56:44.234 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.243 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Received successful response: 200, AWS Request ID: 328C650BDBDB7151
+2019-02-10 16:56:44.243 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : x-amzn-RequestId: not available
+2019-02-10 16:56:44.243 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : AWS Request ID: 328C650BDBDB7151
+2019-02-10 16:56:44.254 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Sending Request: POST https://mytestjavabucket.s3.us-west-2.amazonaws.com /MyStudentData1.txt Parameters: ({"uploadId":["uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0"]}Headers: (User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151, amz-sdk-invocation-id: b5b24937-573e-5383-112a-7f369fdff29e, Content-Length: 135, Content-Type: application/xml, ) 
+2019-02-10 16:56:44.254 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 Canonical Request: '"POST
+/MyStudentData1.txt
+uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0
+amz-sdk-invocation-id:b5b24937-573e-5383-112a-7f369fdff29e
+amz-sdk-retry:0/0/500
+content-length:135
+content-type:application/xml
+host:mytestjavabucket.s3.us-west-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20190210T235644Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-02-10 16:56:44.254 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.a.AWS4Signer                         : AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190210T235644Z
+20190210/us-west-2/s3/aws4_request
+256dec8f623f56f218c32b8ba51ea47ed7ec794ef9985e1eb3ddb01ea611f4f0"
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAddCookies              : CookieSpec selected: default
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.c.p.RequestAuthCache               : Auth cache not set in the context
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 50000
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Executing request POST /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0 HTTP/1.1
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Proxy auth state: UNCHALLENGED
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> POST /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0 HTTP/1.1
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Host: mytestjavabucket.s3.us-west-2.amazonaws.com
+2019-02-10 16:56:44.256 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=f41888ac3ac373a96489944ea17dae9f66b71cf7fcfc85ee813c53dd976fd50f
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> X-Amz-Date: 20190210T235644Z
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-invocation-id: b5b24937-573e-5383-112a-7f369fdff29e
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-02-10 16:56:44.262 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Type: application/xml
+2019-02-10 16:56:44.263 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Content-Length: 135
+2019-02-10 16:56:44.263 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 >> Connection: Keep-Alive
+2019-02-10 16:56:44.263 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "POST /MyStudentData1.txt?uploadId=uqxn44ZJbTfqkyxLP6yK91wAFqMdCmvF0Em2WrXBC2r4KulLPm8zHoySvsUSSZ4wb932PKYPweaBu6qr5T18L07oVAn7W4MNix7n7jAfG7eBctEhuKGqE9OwI7MoEXi0 HTTP/1.1[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Host: mytestjavabucket.s3.us-west-2.amazonaws.com[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAIUQ24WIB6IK35YAQ/20190210/us-west-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=f41888ac3ac373a96489944ea17dae9f66b71cf7fcfc85ee813c53dd976fd50f[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "X-Amz-Date: 20190210T235644Z[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.495 Windows_7/6.1 Java_HotSpot(TM)_64-Bit_Server_VM/25.151-b12 java/1.8.0_151[\r][\n]"
+2019-02-10 16:56:44.264 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-invocation-id: b5b24937-573e-5383-112a-7f369fdff29e[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Type: application/xml[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Content-Length: 135[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "[\r][\n]"
+2019-02-10 16:56:44.265 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 >> "<CompleteMultipartUpload><Part><PartNumber>1</PartNumber><ETag>2ab9a36c0cc55a05adb1a72b9543cb80</ETag></Part></CompleteMultipartUpload>"
+2019-02-10 16:56:44.348 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-id-2: quQxv3hpa9eI6kOJPAFoNQ3FlY5vwWViuIpC3a8OJymNoQniqP4zEmiAu710GHbHYPU5M2KTr/o=[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "x-amz-request-id: 0F82541B0BB96E06[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Date: Sun, 10 Feb 2019 23:57:37 GMT[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << HTTP/1.1 200 OK
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-id-2: quQxv3hpa9eI6kOJPAFoNQ3FlY5vwWViuIpC3a8OJymNoQniqP4zEmiAu710GHbHYPU5M2KTr/o=
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << x-amz-request-id: 0F82541B0BB96E06
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Date: Sun, 10 Feb 2019 23:57:37 GMT
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Content-Type: application/xml
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Transfer-Encoding: chunked
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.headers                            : http-outgoing-0 << Server: AmazonS3
+2019-02-10 16:56:44.349 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.i.e.MainClientExec                 : Connection can be kept alive for 60000 MILLISECONDS
+2019-02-10 16:56:44.350 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.s.s.m.t.XmlResponsesSaxParser        : Parsing XML response document with handler: class com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$CompleteMultipartUploadHandler
+2019-02-10 16:56:44.350 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "27[\r][\n]"
+2019-02-10 16:56:44.350 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-02-10 16:56:44.350 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.355 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "144[\r][\n]"
+2019-02-10 16:56:44.355 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\n]"
+2019-02-10 16:56:44.355 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "<CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://mytestjavabucket.s3.us-west-2.amazonaws.com/MyStudentData1.txt</Location><Bucket>mytestjavabucket</Bucket><Key>MyStudentData1.txt</Key><ETag>&quot;74863c5b03af7a58cae3eec8fef5c8e8-1&quot;</ETag></CompleteMultipartUploadResult>[\r][\n]"
+2019-02-10 16:56:44.390 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "0[\r][\n]"
+2019-02-10 16:56:44.391 DEBUG FTL1860244C7E5E
+			--- [           main] o.a.h.wire                               : http-outgoing-0 << "[\r][\n]"
+2019-02-10 16:56:44.391 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-02-10 16:56:44.392 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.DefaultManagedHttpClientConnection : http-outgoing-0: set socket timeout to 0
+2019-02-10 16:56:44.392 DEBUG FTL1860244C7E5E
+			--- [           main] h.i.c.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://mytestjavabucket.s3.us-west-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-02-10 16:56:44.393 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.request                              : Received successful response: 200, AWS Request ID: 0F82541B0BB96E06
+2019-02-10 16:56:44.393 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : x-amzn-RequestId: not available
+2019-02-10 16:56:44.393 DEBUG FTL1860244C7E5E
+			--- [           main] c.a.requestId                            : AWS Request ID: 0F82541B0BB96E06
